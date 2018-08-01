@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+        
+    </head>
+    <body>
+
+        <nav class="breadcrumb"> 
+            <span class="breadcrumb-item active" href="http://localhost:5000/login">Login</span>
+            <a class="breadcrumb-item" href="http://localhost:5000/home">Home</a>
+        </nav>
+
+        <body data-ng-app="myApp" data-ng-controller="controller">
+            <div class="container-fluid" >
+                <h1 class="header text-center text-success">Login With Iot In A Box</h1>
+                <form role="form">
+                    <a class="btn btn-primary" href = 'https://va-staging-keycloak.mydevices.com/auth/realms/iotinabox/protocol/openid-connect/auth?client_id=python-example-app&redirect_uri=http://localhost:5000/auth/cb&state=1232&response_type=code'>Login</a>
+                </form> <br>
+            </div>
+            
+        </body>
+    
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+        <script src="//unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+        <script src="/static/controller.js"></script>
+    </body>
+</html>
