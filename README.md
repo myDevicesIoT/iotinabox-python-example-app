@@ -26,6 +26,9 @@ This script can be installed with git:
 		
 	git clone https://github.com/myDevicesIoT/iotinabox-python-example-app.git
 
+Install the python requests library by opening up a terminal and typing:
+
+        pip install requests
 
 Setup:
 -------------
