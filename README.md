@@ -13,11 +13,13 @@ Requirements:
 
         pip install flask
 
-* pip - Python package manager. This should already be installed on Raspbian, but if it isnt,
-  install it using:
-  
-		sudo apt-get update
-		sudo apt-get install python-pip
+* pip - Python package manager. Install it on Windows by running [this](https://bootstrap.pypa.io/get-pip.py) script using python:
+
+    python get-pip.py
+
+Install on Mac using:
+
+        sudo easy_install pip
 
 
 Installation:
