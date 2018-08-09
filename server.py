@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, request, redirect, jsonify, send_from_directory
+from flask import Flask, request, redirect, jsonify, send_from_directory
 import requests
 import json
 app = Flask(__name__, static_url_path='/static')
