@@ -4,7 +4,7 @@ import json
 app = Flask(__name__, static_url_path='/static')
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
-TOKEN_URL = 'https://va-staging-keycloak.mydevices.com/auth/realms/iotinabox/protocol/openid-connect/token'
+TOKEN_URL = 'https://accounts.iotinabox.com/auth/realms/iotinabox/protocol/openid-connect/auth'
 
 #Input your client credentials here
 CLIENT_ID = ''

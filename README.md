@@ -1,6 +1,10 @@
 # iotinabox-python-example-app
 
-This example app presents all the companies, locations, and sensors associated with an IoTInABox account.
+This example app presents all the companies, locations, and sensors associated with an IoTinABox account.
+
+API Credentials
+===============
+This example code requires Client API credentials in order to work. Please solicit these credentials by sending an email to [support@iotinabox.com](mailto:support@iotinabox.com)
 
 
 Requirements:
@@ -20,6 +24,8 @@ Requirements:
 Install on Mac using:
 
         sudo easy_install pip
+
+
 
 
 Installation:
