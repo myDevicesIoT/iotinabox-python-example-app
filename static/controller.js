@@ -41,7 +41,7 @@ app.config(['$stateProvider', function($stateProvider) {
                 getCompanies: function($http, $rootScope) {
                     return $http({
                         method:"GET",
-                        url: "https://va-staging-simplysense-api.mydevices.com/companies",
+                        url: "https://api.iotinabox.com/companies",
                         headers: {
                             'Authorization': 'Bearer ' + $rootScope.accessToken
                         }
@@ -62,7 +62,7 @@ app.config(['$stateProvider', function($stateProvider) {
                 getLocations: function($rootScope, $http, $stateParams) {
                     return $http({
                         method:"GET",
-                        url: "https://va-staging-simplysense-api.mydevices.com/companies/" + $stateParams.companyID + "/locations",
+                        url: "https://api.iotinabox.com/companies/" + $stateParams.companyID + "/locations",
                         headers: {
                             'Authorization': 'Bearer ' + $rootScope.accessToken
                         }
@@ -84,7 +84,7 @@ app.config(['$stateProvider', function($stateProvider) {
                 getSensors : function($rootScope, $http, $stateParams) {
                     return $http({
                         method:"GET",
-                        url: "https://va-staging-simplysense-api.mydevices.com/companies/" + $stateParams.companyID + "/locations/" + $stateParams.locationID + "/things?type=sensor",
+                        url: "https://api.iotinabox.com/companies/" + $stateParams.companyID + "/locations/" + $stateParams.locationID + "/things?type=sensor",
                         headers: {
                             'Authorization': 'Bearer ' + $rootScope.accessToken
                         }
