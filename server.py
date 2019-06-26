@@ -4,7 +4,7 @@ import json
 app = Flask(__name__, static_url_path='/static')
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
-TOKEN_URL = 'https://accounts.iotinabox.com/auth/realms/iotinabox/protocol/openid-connect/auth'
+TOKEN_URL = 'https://auth.mydevices.com/auth/realms/iotinabox/protocol/openid-connect/token'
 
 #Input your client credentials here
 CLIENT_ID = ''
@@ -22,6 +22,7 @@ TOKEN_DATA = {}
 
 
 def getTokens():
+    print("Getting Tokens...")
     token_request = requests.post(TOKEN_URL, data=POST_DATA).json()
     TOKEN_DATA['access_token'] = token_request['access_token']
     TOKEN_DATA['refresh_token'] = token_request['refresh_token']
@@ -32,7 +33,7 @@ def getTokens():
 def authenticate():
     POST_DATA['code'] = request.args.get('code')
     getTokens()
-    return redirect('home')
+    return redirect('/home')
 
 @app.route('/data')
 def return_data():
