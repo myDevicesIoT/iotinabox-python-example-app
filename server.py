@@ -7,8 +7,8 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 TOKEN_URL = 'https://auth.mydevices.com/auth/realms/iotinabox/protocol/openid-connect/token'
 
 #Input your client credentials here
-CLIENT_ID = 'api-example-app'
-CLIENT_SECRET = '7f377b52-3ff8-41ca-b23b-a7874415c63f'
+CLIENT_ID = ''
+CLIENT_SECRET = ''
 
 
 POST_DATA = {
